@@ -1,0 +1,47 @@
+package shapesSVG;
+public class Rectangulo{
+    private Vector2 a;
+    private double ancho;
+    private double alto;
+    private double perimetro;
+    private double area;
+    
+
+    public Rectangulo(Vector2 uno, double ancho, double alto){
+	this.a=uno;
+	this.ancho=ancho;
+	this.alto=alto;
+    }
+
+    public Rectangulo(double x, double y, double ancho, double alto){
+	a= new Vector2(x,y);
+	this.ancho=ancho;
+	this.alto=alto;
+    }
+
+    public Rectangulo(){
+	a= new Vector2(0,0);
+	this.ancho=5;
+	this.alto=10;
+
+    }
+
+    public String toSVG(){
+
+	String rect="<rect x='"+this.a.getX()+"' y='"+this.a.getY()+"' width='"+this.ancho+"' height='"+this.alto+"' fill:'red' />";
+	
+	return rect;
+    }
+
+    public String toString(){
+	String salida="Es un cuadrado dado por el vector : ("+this.a.getX()+","+this.a.getY()+") \n con altura de: "+this.alto+ "\n ancho de :"+this.ancho ;
+	return salida;
+    }
+
+    public boolean equals(Rectangulo rectangulo2){
+	if(this.a.getX()==rectangulo2.a.getX() && this.a.getY()==rectangulo2.a.getY()&& this.alto==rectangulo2.alto && this.ancho==rectangulo2.ancho ){
+	    return true;
+	}
+	return false;
+    }
+}
