@@ -27,6 +27,8 @@ public class Rectangulo{
 	this.a=uno;
 	this.ancho=ancho;
 	this.alto=alto;
+	this.area=this.ancho*this.alto*.5;
+	this.perimetro= 2*this.ancho*2*this.alto;
     }
 
     
@@ -44,6 +46,8 @@ public class Rectangulo{
 	a= new Vector2(x,y);
 	this.ancho=ancho;
 	this.alto=alto;
+		this.area=this.ancho*this.alto*.5;
+	this.perimetro= 2*this.ancho*2*this.alto;
     }
 
     
@@ -55,7 +59,8 @@ public class Rectangulo{
 	a= new Vector2(0,0);
 	this.ancho=5;
 	this.alto=10;
-
+		this.area=this.ancho*this.alto*.5;
+	this.perimetro= 2*this.ancho*2*this.alto;
     }
 
      
@@ -76,7 +81,7 @@ public class Rectangulo{
 /* Mediante los elementos del objeto crea y regresa  una cadena que describe al objeto
 **/
     public String toString(){
-	String salida="Es un cuadrado dado por el vector : ("+this.a.getX()+","+this.a.getY()+") \n con altura de: "+this.alto+ "\n ancho de :"+this.ancho ;
+	String salida="Es un cuadrado dado por el vector : ("+this.a.getX()+","+this.a.getY()+") \n con altura de: "+this.alto+ "\n ancho de :"+this.ancho +"Con un area de :"+this.area+"\n Y un perimetro de : "+this.perimetro;
 	return salida;
     }
 

@@ -17,6 +17,8 @@ public class Circulo{
     public Circulo(Vector2 centro,double radio){
 	this.centro=centro;
 	this.radio=radio;
+	this.area= Math.pow(this.radio,2)*Math.PI;
+	this.perimetro=2*this.radio*Math.PI;
     }
 /**
 /* Segundo Constructor de la clase Circulo 
@@ -28,6 +30,8 @@ public class Circulo{
     public Circulo(double x, double y, double radio){
 	this.centro= new Vector2(x,y);
 	this.radio=radio;
+		this.area= Math.pow(this.radio,2)*Math.PI;
+	this.perimetro=2*this.radio*Math.PI;
     }
 /**
 /* Constructor por default
@@ -37,6 +41,8 @@ public class Circulo{
     public Circulo(){
 	this.centro= new Vector2(0,0);
 	this.radio=10;
+		this.area= Math.pow(this.radio,2)*Math.PI;
+	this.perimetro=2*this.radio*Math.PI;
     }
 
 /**
@@ -53,7 +59,7 @@ public class Circulo{
 /* Es una metodo que crea y regresa una cadena con los elementos del objeto
 **/
     public String toString(){
-	String cadena= "El circulo esta dado por: \n el punto: ("+this.centro.getX()+","+this.centro.getY()+") \n con un radio de :"+this.radio;
+	String cadena= "El circulo esta dado por: \n el punto: ("+this.centro.getX()+","+this.centro.getY()+") \n con un radio de :"+this.radio+" \n Tiene un area de : "+this.area+"\n un Un perimetro de : "+this.perimetro;
 	return cadena;
     }
 
