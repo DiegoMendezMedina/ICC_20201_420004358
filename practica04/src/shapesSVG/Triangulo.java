@@ -26,6 +26,8 @@ public class Triangulo{
 	this.a=primero;
 	this.b=segundo;
 	this.c=tercero;
+	this.perimetro=this.a.distancia(b)+this.b.distancia(c)+this.c.distancia(a);
+	this.area=this.a.distancia(b)*(this.a.distancia(c))/2;
     }
 
 /**
@@ -44,6 +46,8 @@ public class Triangulo{
 	this.a= new Vector2(x1,y1);
 	this.b= new Vector2(x2,y2);
 	this.c= new Vector2(x3,y3);
+	this.perimetro=this.a.distancia(b)+this.b.distancia(c)+this.c.distancia(a);
+		this.area=this.a.distancia(b)*(this.a.distancia(c))/2;
     }
 /**
 /* Constructor por default
@@ -53,6 +57,8 @@ public class Triangulo{
 	this.a= new Vector2(0,0);
 	this.b= new Vector2(10,10);
 	this.c= new Vector2(5,10);
+	this.perimetro=this.a.distancia(b)+this.b.distancia(c)+this.c.distancia(a);
+		this.area=this.a.distancia(b)*(this.a.distancia(c))/2;
     }
     
 /**
@@ -69,7 +75,7 @@ public class Triangulo{
 /* Mediante los elementos del objeto crea y regresa  una cadena que describe al objeto
 **/
     public String toString(){
-	String salida="Es un triangulo dado por los puntos : \n Punto1: ("+this.a.getX()+","+this.a.getY()+") \n Punto2: ("+this.b.getX()+","+this.b.getX()+") \n Punto3: ("+this.c.getX()+","+this.c.getY()+")";
+	String salida="Es un triangulo dado por los puntos : \n Punto1: ("+this.a.getX()+","+this.a.getY()+") \n Punto2: ("+this.b.getX()+","+this.b.getX()+") \n Punto3: ("+this.c.getX()+","+this.c.getY()+") \n Con un perimetro de : "+this.perimetro+"\n Y un area de : "+this.area;
 	return salida;
     }
 /**

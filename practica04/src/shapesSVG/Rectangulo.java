@@ -27,8 +27,8 @@ public class Rectangulo{
 	this.a=uno;
 	this.ancho=ancho;
 	this.alto=alto;
-	this.area=this.ancho*this.alto*.5;
-	this.perimetro= 2*this.ancho*2*this.alto;
+	this.area=this.ancho*this.alto;
+	this.perimetro= 2*this.ancho+2*this.alto;
     }
 
     
@@ -46,8 +46,8 @@ public class Rectangulo{
 	a= new Vector2(x,y);
 	this.ancho=ancho;
 	this.alto=alto;
-		this.area=this.ancho*this.alto*.5;
-	this.perimetro= 2*this.ancho*2*this.alto;
+		this.area=this.ancho*this.alto;
+	this.perimetro= 2*this.ancho+2*this.alto;
     }
 
     
@@ -59,8 +59,8 @@ public class Rectangulo{
 	a= new Vector2(0,0);
 	this.ancho=5;
 	this.alto=10;
-		this.area=this.ancho*this.alto*.5;
-	this.perimetro= 2*this.ancho*2*this.alto;
+		this.area=this.ancho*this.alto;
+	this.perimetro= 2*this.ancho+2*this.alto;
     }
 
      
