@@ -8,7 +8,8 @@ package shapesSVG;
 /*@param perimetro de tipo double
 /*@param area de tipo double
 **/
-public class Triangulo extends Shape{
+public class Triangulo extends Shape {
+    //implements Transformable
     private Vector2 b;
     private Vector2 c;
 
@@ -83,7 +84,7 @@ public class Triangulo extends Shape{
     }
 
     /**
-     *Transform al triangulo
+     *Transform al triangulo 
      */
     /*
     public void transform(Transformable<Triangulo> change){

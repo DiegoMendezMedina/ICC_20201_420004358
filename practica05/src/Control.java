@@ -61,7 +61,7 @@ public class Control{
     public static void problema3(int[] arreglo){
 	int izq;
 	int der;
-	//     for(int i=0; i<arreglo.length-1;i++){
+      for(int i=0; i<arreglo.length-1;i++){
 	for(int j=0; j<arreglo.length-1-i;j++){
 	    if(arreglo[j]>arreglo[j+1]){
 		izq=arreglo[j];
@@ -69,7 +69,7 @@ public class Control{
 		arreglo[j+1]=izq;
 	    }
 	}
-	//}
+	}
 
      
     }

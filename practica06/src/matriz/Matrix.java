@@ -34,8 +34,7 @@ public class Matrix{
 	matriz= new double[array.length][array[0].length];
 	for(int i=0;i<this.matriz.length;i++){
 	    for(int j=0;j<this.matriz[0].length;j++){
-		this.matriz[i][j]=array[i][j];
-		
+		this.matriz[i][j]=array[i][j];		
 	    }
 
 	}
@@ -50,12 +49,9 @@ public class Matrix{
 
 	for(int i=0;i<this.matriz.length;i++){
 	    for(int j=0;j<this.matriz[0].length;j++){
-		this.matriz[i][j]=this.matriz[i][j]*scalar;
-		
-	    }
-	    	
+		this.matriz[i][j]=this.matriz[i][j]*scalar;		
+	    }	    	
 	}
-
     }
     //Funcion que calcula suma de matrices
 /**
@@ -94,9 +90,7 @@ public class Matrix{
 		}
 	    }
 	    this.matriz=resp; 	
-	}
-	
-	
+	}		
 	else{
 	    System.out.println("No se pueden multiplicar estas matrices");
 	}
@@ -111,10 +105,8 @@ public class Matrix{
 **/     
     //Funcion que obtiene el elemento i j
     public double getElement(int i, int j){
-	return this.matriz[i][j];
-	    
+	return this.matriz[i][j];	    
     }
-
     //function set element
 /**
 /* Metodo setElement
@@ -127,9 +119,7 @@ public class Matrix{
 	for(int l=0;l<this.matriz.length;l++){
 	    for(int k=0;k<this.matriz[0].length;k++){
 		if(l==i && k==j){
-
-		    this.matriz[i][j]=e;
-		
+		    this.matriz[i][j]=e;		
 		}
 	    }
 	}

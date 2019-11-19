@@ -18,7 +18,7 @@ public class Queen extends Rook{
 /**
 /*Method getLegalMoves
 /* We override the method from the class Rook
-/*This method adds and returns a list of the possible Positions where the Queen can moved.
+/*This method adds and returns a list of the possible Positions where the Queen can be moved.
 **/    
     @Override
      public List<Position> getLegalMoves() {
@@ -34,19 +34,8 @@ public class Queen extends Rook{
 	}
 	for(int i=this.position.getX()-1, j=this.position.getY()+1;i>=0 && j<8;i--,j++){
 	    this.legalMoves.add(new Position(i,j)); // We add the moves that can be done to the left and down
-	}
-	for(int  j=this.position.getY()+1; j<8;j++){
-	    this.legalMoves.add(new Position(this.position.getX(),j));  // We add the moves that can be done down
-	}
-	for(int  j=this.position.getY()-1; j>=0;j--){
-	    this.legalMoves.add(new Position(this.position.getX(),j)); // We add the moves that can be done up
-	}
-	for(int  j=this.position.getX()+1; j<8;j++){
-	    this.legalMoves.add(new Position(j,this.position.getY())); // We add the moves that can be done to the rigth
-	}
-	for(int  j=this.position.getX()-1; j>=9;j--){
-	    this.legalMoves.add(new Position(j,this.position.getY())); // We add the moves that can be done to the left
-	}
+	}	       
+
         return this.legalMoves;
     }
 }

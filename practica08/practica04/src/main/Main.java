@@ -34,11 +34,14 @@ public class Main{
        	System.out.println(rectangulo.toSVG());
 	System.out.println(vector7.toSVG());
 
-	Triangulo trian= new Triangulo(250,250,250,350,350,350);
+	Vector2 vector8= new Vector2(250,250);
+	Vector2 vector9= new Vector2(250,350);
+	Vector2 vector10= new Vector2(350,350);
+	Triangulo trian= new Triangulo(vector8,vector9,vector10);
        	System.out.println(trian.toSVG());
 
-	Transform trans=(t) -> 10;
-	System.out.println(trian.trans.transform(10));
+	//Transform trans=(t) -> 10;
+	//System.out.println(trian.trans.transform(10));
 	
 	Vector2 vector6 = new Vector2(600,100);
 	Circulo circ= new Circulo(vector6,50,100);
